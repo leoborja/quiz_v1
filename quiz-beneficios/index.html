@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Descubra seus benefícios do governo</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '8889674227742281');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=8889674227742281&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="title">
+      Descubra qual benefício do governo é ideal para você
+      <div class="subtitle">(Leva menos de 1 minuto) ⏰</div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div id="quiz"></div>
+    <div class="user-info-container" id="user-info">
+      <div class="capture-title">Preencha seus dados</div>
+      <div class="capture-subtitle">
+        Para receber informações sobre seus benefícios disponíveis, insira suas informações abaixo.
+      </div>
+      <form id="lead-form">
+        <div class="form-group">
+          <label for="name">Nome completo:</label>
+          <input type="text" id="name" placeholder="Informe seu nome" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Celular:</label>
+          <input type="tel" id="phone" placeholder="(XX) XXXXX-XXXX" maxlength="15" />
+        </div>
+        <div class="security-message">Seus dados estão protegidos!</div>
+        <button type="submit" class="btn" id="submit" style="display:none;">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

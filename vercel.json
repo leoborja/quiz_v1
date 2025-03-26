@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/quiz-beneficios/(.*)",
+      "dest": "/quiz-beneficios/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "server.js"
+    }
+  ]
+} 
