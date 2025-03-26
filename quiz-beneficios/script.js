@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Envia os dados para o backend
-      const response = await fetch('http://localhost:3000/api/lead', {
+      const response = await fetch('https://formulario-wpp.vercel.app/api/lead', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
