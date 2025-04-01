@@ -71,10 +71,7 @@ function renderQuestion() {
     li.querySelector("input").addEventListener("change", () => {
       if (opt.eliminatory) return redirectUser(false);
       answers[currentQuestionIndex] = { ...opt, question: currentQuestionIndex };
-      currentQuestionIndex++;
-      currentQuestionIndex < quizConfig.questions.length
-        ? renderQuestion()
-        : showUserInfo();
+      redirectUser(true);
     });
     ul.appendChild(li);
   });
