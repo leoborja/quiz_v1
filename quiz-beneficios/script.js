@@ -1,5 +1,5 @@
-const redirectURL = "https://recomendador.com.br/s1-mt-pis-pasep";
-const deliveryURL = "https://recomendador.com.br/s3-mt-mcmv/";
+const redirectURL = "https://mcmpovos.com.br/go-us-p1-shein-de-graca-spa-alt/";
+const deliveryURL = "https://mcmpovos.com.br/go-us-p1-shein-de-graca-spa-alt/";
 let currentQuestionIndex = 0;
 const answers = [];
 let isSubmitting = false;
@@ -7,28 +7,10 @@ let isSubmitting = false;
 const quizConfig = {
   questions: [
     {
-      question: "Qual sua situação de trabalho atual?",
+      question: "¿Ya recibiste productos gratis de Shein?",
       options: [
-        { text: "Empregado com carteira assinada" },
-        { text: "Desempregado" },
-        { text: "Autônomo/MEI" },
-        { text: "Aposentado/Pensionista" }
-      ]
-    },
-    {
-      question: "Qual sua renda familiar mensal?",
-      options: [
-        { text: "Até R$ 1.800" },
-        { text: "Entre R$ 1.800 e R$ 2.640" },
-        { text: "Entre R$ 2.640 e R$ 4.400" },
-        { text: "Mais de R$ 4.400" }
-      ]
-    },
-    {
-      question: "Você aceita receber informações sobre benefícios no seu WhatsApp?",
-      options: [
-        { text: "Sim, quero receber as informações" },
-        { text: "Não, obrigado", eliminatory: true }
+        { text: "No, ¡quiero saber más!" },
+        { text: "Sí, ¡pero quiero recibir más productos!" }
       ]
     }
   ]
@@ -102,10 +84,9 @@ function showUserInfo() {
 }
 
 function redirectUser(success) {
-  const base = success ? deliveryURL : redirectURL;
   const params = new URLSearchParams(window.location.search);
   const queryString = params.toString();
-  window.location.href = queryString ? `${base}?${queryString}` : base;
+  window.location.href = queryString ? `${redirectURL}?${queryString}` : redirectURL;
 }
 
 
