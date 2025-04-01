@@ -216,4 +216,14 @@ body {
 .btn:disabled {
   background: #ccc;
   cursor: not-allowed;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
 } 
